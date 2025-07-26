@@ -1,0 +1,17 @@
+
+
+function: say_hello
+positional parameters: none
+keyword parameters: none
+return: None
+
+function: return_true
+positional parameters: (1, 2, 3)
+keyword parameters: none
+return: True
+
+function: keyword_only
+positional parameters: none
+keyword parameters: {'name': 'Tatiana', 'project': 'Ada', 'level': 'junior'}
+return: <function logger_decorator at 0x102f38ea0>
+
