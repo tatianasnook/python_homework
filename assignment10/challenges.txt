@@ -1,0 +1,10 @@
+My main challenges were:
+
+1. Accessing the list of vulnerabilities: The <ul> with the top 10 risks did not have an id or class, 
+so I had to use the <h2> element before it and XPath to locate the list.
+
+2. Extracting the vulnerability title: Each <li> contained both the title and description, 
+so I had to specifically select the <strong> tag inside the <a> to get only the title.
+
+Both challenges were resolved by inspecting the page structure using browser developer tools and 
+carefully crafting XPath expressions to target the correct elements.

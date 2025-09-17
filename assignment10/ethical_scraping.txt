@@ -1,0 +1,34 @@
+Task 5: Ethical Web Scraping
+
+1. Access the robots.txt file for Wikipedia: Wikipedia Robots.txt.
+
+2. Analyze the file and answer the following questions. 
+Put your answers in a file called ethical_scraping.txt in your python_homework/assignment10 directory
+
+- Which sections of the website are restricted for crawling?
+
+Restricted sections:
+/wiki/Special:
+/wiki/Wikipedia:Articles_for_deletion
+/wiki/Wikipedia_talk:*
+/wiki/MediaWiki:Spam-blacklist
+/wiki/Wikipedia:Contributor_copyright_investigations
+/wiki/Wikipedia:Protected_titles
+/wiki/Wikipedia:Requests_for_*
+Non-English equivalents
+Certain project pages (Wikinews, Wikiquote, Wikibooks)
+
+- Are there specific rules for certain user agents?
+
+Some bots have explicit instructions:
+MJ12bot, Mediapartners-Google*, UbiCrawler, wget, fast, etc. → Disallow: / (no crawling at all)
+SemrushBot → Crawl-delay: 5 (limit request rate)
+IsraBot, Orthogaffe → Disallow: (allowed, no restrictions)
+* (all other bots) → allowed for certain APIs and mobile views (Allow: lines), disallowed for restricted pages above.
+
+3. Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose and how it promotes ethical scraping. 
+Put these in ethical_scraping.txt in your python_homework directory.
+
+Websites use robots.txt to control how automated bots access their content. It helps prevent server overload, 
+protect sensitive information, and maintain privacy. Following robots.txt promotes ethical scraping 
+by ensuring that bots respect the site’s rules and avoid disrupting normal users.
